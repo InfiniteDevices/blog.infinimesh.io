@@ -1,6 +1,6 @@
 ---
 title: "Big Data does not mean high costs"
-date: 2019-21-04 18:00:00
+date: 2019-21-02 18:00:00
 description: These days it means more to understand business processes and to transform them into data-driven opportunities – using cloud technology when needed
 ---
 
