@@ -14,3 +14,4 @@ What makes infinimesh.io different? Using kubernetes as infrastructure layer, ka
 
 <a href="https://www.businessinsider.de/lyft-ipo-amazon-web-services-2019-3?r=US&IR=T" target="_new">Businessinsider article</a>
 
+{% include sharing.html %}
