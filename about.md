@@ -4,6 +4,6 @@ permalink: about/
 profile: true
 ---
 
-This is a static page. It could be an 'about page' if you'd like.
+Founded by engineers who build the backbone for the European Energy Revolution Infinimesh IoT aims to make Industrial and Individual IoT securely available and affordable for everyone, at every time and everywhere.
 
 {% include footer.html %}
