@@ -1,7 +1,7 @@
 ---
-title: "The freedom of tech and public clouds"
+title: "The freedom of Tech and Public Clouds"
 date: 2019-04-03 12:18:00
-description: cloud vendor lockin often hits unexpected
+description: Cloud vendor lockin often hits unexpected, but can be avoided by cloud native technology
 ---
 
 Lyft pays 8M/month for AWS services, and plan to spend 300M till 2021 - here the <a href="https://www.businessinsider.de/lyft-ipo-amazon-web-services-2019-3?r=US&IR=T" target="_new">Businessinsider article</a>. Even when Lyft doesn't match the numbers they have to pay the full amount - a deep lock-in, according to different media coverages.
