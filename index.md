@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-## infinimesh tech blog
+## software, tech and development
 
 ### The freedom of tech and public clouds 
 
