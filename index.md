@@ -2,8 +2,6 @@
 layout: default
 ---
 
-## infinimesh blog - we love tech
-
 ### The freedom of tech and public clouds 
 
 Lyft pays 8M/month for AWS services, and plan to spend 300M till 2021. Even when Lyft doesn't match the numbers they have to pay the full amount - a deep lock-in, according to different media coverages.
