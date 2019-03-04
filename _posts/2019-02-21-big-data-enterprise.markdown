@@ -17,4 +17,3 @@ __Data-driven opportunities__
 Big data does not mean heavy operation costs and long-running training cycles. Nowadays it means more to understand business processes and to transform them into data-driven opportunities, using cloud technology when needed to develop your own solutions.
 
 But using data has strong ethical consequences. I’m not a fan of storing every bit of personalised data just to have it. Clearly divide between machine and robotics data from assets, circuits, transformers, windmills, solar farms, engines, cars and so on and personal data from customer solutions to build different approaches for data analysis. Personal data belongs to the individual, and it needs to get it processed there − edge computing brings a lot of advantages to achieve this. Always stay upfront, improve and drive the digital change.
-
