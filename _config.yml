@@ -1,6 +1,6 @@
 # Site settings
 title: infinimesh blog - we love tech
-tag_text: software, tech and development
+tag_text: infinimesh blog - we love tech
 description: infinimesh IoT is worlds first open cloud native platfrom, and here we write about our tech stack and what we do
 url: "https://infinimesh.github.io"
 baseurl: ""
