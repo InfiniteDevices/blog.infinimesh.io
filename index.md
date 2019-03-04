@@ -3,7 +3,7 @@ layout: default
 ---
 ## all around software and IoT
 
-### (The-freedom-of-tech-and-public-clouds) 
+### The freedom of tech and public clouds 
 
 Lyft pays 8M/month for AWS services, and plan to spend 300M till 2021 - here the <a href="https://www.businessinsider.de/lyft-ipo-amazon-web-services-2019-3?r=US&IR=T" target="_new">Businessinsider article</a>. Even when Lyft doesn't match the numbers they have to pay the full amount - a deep lock-in, according to different media coverages.
 
