@@ -3,7 +3,8 @@ title: "Big Data does not mean high costs"
 date: 2019-21-04 18:00:00
 description: These days it means more to understand business processes and to transform them into data-driven opportunities – using cloud technology when needed
 ---
-Our CEO <a href="https://www.linkedin.com/in/alexanderalten/" target="_new">Alex</a> gave <a href="https://techerati.com" target="_new">Techerati</b> a interview about Big Data and why Enterprise customer mostly struggle to use newest technology in their IT landscape. Here some remarks, read the full <a href="https://techerati.com/features-hub/opinions/big-data-enterprise-it-eon-training/" target="_new">article</b> online.
+
+Our CEO <a href="https://www.linkedin.com/in/alexanderalten/" target="_new">Alex</a> gave <a href="https://techerati.com" target="_new">Techerati</a> a interview about Big Data and why Enterprise customer mostly struggle to use newest technology in their IT landscape. Here some remarks, read the full <a href="https://techerati.com/features-hub/opinions/big-data-enterprise-it-eon-training/" target="_new">article</a> online.
 
 __Different strokes for different folks__
 
