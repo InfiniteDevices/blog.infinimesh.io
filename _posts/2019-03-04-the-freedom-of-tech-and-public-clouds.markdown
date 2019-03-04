@@ -1,6 +1,6 @@
 ---
 title: "The freedom of Tech and Public Clouds"
-date: 2019-04-03 12:18:00
+date: 2019-03-04 12:18:00
 description: Cloud vendor lockin often hits unexpected, but can be avoided by cloud native technology
 ---
 
