@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-## software, tech and development
+## all around software and IoT
 
 ### The freedom of tech and public clouds 
 
