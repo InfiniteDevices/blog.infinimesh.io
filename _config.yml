@@ -1,13 +1,42 @@
-# Site settings
-title: infinimesh blog - we love tech
-tag_text: infinimesh blog - we love tech
+name: infinimesh blog - we love tech
 description: infinimesh IoT is worlds first open cloud native platfrom, and here we write about our tech stack and what we do
-url: "https://infinimesh.github.io"
-baseurl: ""
+meta_description: "infinimesh blog - we love tech"
 
-font-awesome-include: true # make this false if you don't need font-awesome
+aboutPage: true
 
-# Build settings
 markdown: kramdown
+highlighter: rouge
 
-exclude: ["README.md"]
+plugins: [jekyll-paginate]
+paginate: 20
+domain_name: 'https://infinimesh.github.io'
+google_analytics: 'UA-119169777-3'
+disqus: false
+disqus_shortname: 'your-disqus-shortname'
+
+# Details for the RSS feed generator
+url:            'https//infinimesh.github.io'
+author:         'infinimesh'
+authorTwitter:  'infinimeshI'
+
+permalink:       /:year/:title/
+
+defaults:
+    -
+        scope:
+            path: "" # empty string for all files
+            type: pages
+        values:
+            layout: default
+    -
+        scope:
+            path: "" # empty string for all files
+            type: posts
+        values:
+            layout: post
+    -
+        scope:
+            path: ""
+            type: drafts
+        values:
+            layout: post
