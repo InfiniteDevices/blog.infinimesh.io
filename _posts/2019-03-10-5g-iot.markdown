@@ -1,0 +1,13 @@
+---
+title: "5G push IIoT into new dimensions"
+date: 2019-03-10 18:00:00
+description: THe push for 5G will raise the connected devices into billions
+---
+
+IoT devices are getting more and more intelligent and can now create meshed networks by itself, switching from a sensor into an actor and transferring information only for the neighbors. For example to tell the doorknob that the Homeowner will be at home in 5 minutes with his EV, and the Wall box and the door needs to be unlocked. Right now that is possible by using IF TTT, as example, but it is an extra protocol and needs manual configuration. We won't talk about security, too ;) 
+
+In future this will happen over direct meshed information cells automatically, inclusive status updates. And here the game of 5G starts.
+
+Cisco, among with others, push to full 5G coverage — IIoT connected devices are the audience. Connecting the world, even on places with no coverage today, increases the possibility of business models nobody thought right now. Starting from automation over inner-device meshed networks to L4 and above autonomous driving — all that needs to have the backbone to operate billions of devices without getting eaten by costs and operations. 
+
+Our #infinimesh platform can help on both topics — highly scalable, no vendor lock and easy to operate, even with Millions of devices. #internetofthings #IoT #it operations #ai #scalability #5g #technology #saas
