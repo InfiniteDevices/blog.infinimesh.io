@@ -7,7 +7,7 @@ description: Our Kubernetes, Apache Kafka ® and graph based Industrial IoT plat
 Today is a day we will never forget - infinimesh (<a href="https://www.infinimesh.io" target="_blank">https://www.infinimesh.io/</a>) is starting and lifting off! 
 Our Kubernetes, Apache Kafka ® and graph based Industrial IoT platform is entering the alpha stage! We have been working 
 like maniacs over the past 14 months to bring a fully flexible, independent, patent and vendor lock-in free IoT platform 
-to you! Soon it's your chance to test and try it out, our closed alpha will be open for public on March 30, 2019! 
+to you! Soon it's your chance to test and try it out, our closed alpha will be open for public on March 30, 2019 - 
 Mark this date in your calendar! 
 
 ### An incredible platform comes to life
@@ -20,7 +20,7 @@ individual IoT secure, available and affordable for all. Infinimesh runs in all 
 or private. All you need is Linux; our platform works in any container environment as well as native.
 
 ### Infinimesh on Google Cloud
-We have selected Google Cloud as strategic partner for our SaaS offering - and from today on the signup is open! 
+We have selected Google Cloud as strategic partner for our SaaS offering - and from today on the platform is running on GCP! 
 Our SaaS offering, running in Google Cloud, is free for everybody up to 25 devices - ideally for makers, startups and 
 industrial Proof of Concepts. That leaves enough room to bring ideas to live and test even larger installations and use 
 the feature rich ecosystem of GCP to make your idea a successful product.
