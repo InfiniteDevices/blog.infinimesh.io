@@ -4,8 +4,7 @@ date: 2019-03-20 18:00:00
 description: Our Kubernetes, Apache Kafka ® and graph based Industrial IoT platform is entering the alpha stage! 
 ---
 
-## Infinimesh IoT / IIoT platform is starting up!
-Today is a day we will never forget - infinimesh (https://www.infinimesh.io/) is starting and lifting off! 
+Today is a day we will never forget - infinimesh (<a href="https://www.infinimesh.io">https://www.infinimesh.io/</a>) is starting and lifting off! 
 Our Kubernetes, Apache Kafka ® and graph based Industrial IoT platform is entering the alpha stage! We have been working 
 like maniacs over the past 14 months to bring a fully flexible, independent, patent and vendor lock-in free IoT platform 
 to you! Soon it's your chance to test and try it out, our closed alpha will be open for public on March 30, 2019! 
@@ -34,6 +33,7 @@ the feature rich ecosystem of GCP to make your idea a successful product.
 - Create hierarchically organized objects, e.g. buildings, rooms to organize and model device hierarchies
 
 ### How does it work?
+  
 Our Kubernetes Operator does the work a real operator would do: it not only installs the whole platform, but also takes 
 care of required cloud/datacenter resources, updates, monitoring and handles incidents like errors. It attempts to resolve 
 as many issues as possible on its own, and notifies human operators when human intervention is required. The operator 
@@ -62,5 +62,5 @@ BACnet will also make its way into the platform quite soon, we expect a first dr
 More exciting news and announcements will follow in the next months, so use the platform and follow this blog or our 
 channels to never miss news. We are happy to have you as user and customer and we will support you in any idea you have. 
 Drop us a mail, or open a Feature Request 
-(https://github.com/infinimesh/infinimesh/blob/master/.github/ISSUE_TEMPLATE/feature_request.md) 
-or contact (https://infinimesh.io/contact.html#contact)  us over our different channels - we are here.
+(<a href="https://github.com/infinimesh/infinimesh/blob/master/.github/ISSUE_TEMPLATE/feature_request.md">https://github.com/infinimesh/infinimesh/blob/master/.github/ISSUE_TEMPLATE/feature_request.md</a>) 
+or contact (<a href="https://infinimesh.io/contact.html#contact">https://infinimesh.io/contact.html#contact</a>)  us over our different channels - we are here.
