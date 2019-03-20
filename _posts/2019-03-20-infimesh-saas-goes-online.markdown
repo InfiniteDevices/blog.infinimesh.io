@@ -31,8 +31,7 @@ the feature rich ecosystem of GCP to make your idea a successful product.
 - Manage accounts (Create/Delete)
 - Manage Namespaces to organize devices and restrict access to devices
 - Create hierarchically organized objects, e.g. buildings, rooms to organize and model device hierarchies
-  
-
+<br>
 ### How does it work?
   
 Our Kubernetes Operator does the work a real operator would do: it not only installs the whole platform, but also takes 
