@@ -31,6 +31,7 @@ the feature rich ecosystem of GCP to make your idea a successful product.
 - Manage accounts (Create/Delete)
 - Manage Namespaces to organize devices and restrict access to devices
 - Create hierarchically organized objects, e.g. buildings, rooms to organize and model device hierarchies
+  
 
 ### How does it work?
   
