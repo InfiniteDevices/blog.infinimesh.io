@@ -9,13 +9,13 @@ highlighter: rouge
 
 plugins: [jekyll-paginate]
 paginate: 20
-domain_name: 'https://infinimesh.github.io'
+domain_name: 'https://blog.infinimesh.io'
 google_analytics: 'UA-119169777-3'
 disqus: false
 disqus_shortname: 'your-disqus-shortname'
 
 # Details for the RSS feed generator
-url:            'https//infinimesh.github.io'
+url:            'https//blog.infinimesh.io'
 author:         'infinimesh'
 authorTwitter:  'infinimeshI'
 
