@@ -59,8 +59,6 @@ Protocol: mqtts / tls
 Host: mqtt.api.infinimesh.io:8883  
 SSL / TLS version: TLSv1.2  
 SSL / TLS Certificate Type: Choose "Self signed certificates"  
-Username: YOUR USERNAME  
-Password: YOUR PASSWORD
 ```
 
 In the three SSL certificate boxes choose the right certificate per field:  
@@ -71,12 +69,12 @@ Client key file: ```my-first-device.key```
 All other parameters can be left as they are. Klick Save. 
 
 #### Subscribe to the device topic and send data to the device twin
-Now, after MQTTBox is properly connected we also want to send some data. In the case you don't see the publisher box, click on ```Add publisher```. Our IoT platform has per default Device Shadow builtin, so we just need to publish to ```shadows/``` and add the proper device id we can see with ```inf device list```. For example, the correct publisher connection string should look like:  
+Now, after MQTTBox is properly connected we also want to send some data. In the case you don't see the publisher box, click on ```Add publisher```. Our IoT platform has per default Device State Management builtin, so we just need to publish to ```devices/<YOUR DEVICE ID>/state/reported/delta``` and add the proper device id we can see with ```inf device list```. For example, the correct publisher connection string should look like:  
 ```
-shadows/0x9e
+devices/0x9e/state/reported/delta
 ```  
 
-As QoS we use ```Exactly Once```, but that depends on your use case you want to prove. As payload type choose one which is suffienct for you, in that HowTo we use simply ```Strings / JSON / XML / Characters```, but infimesh works also with binary data.  
+As QoS we use ```Almost Once``` or ```Atleast once```. As payload you can send any allowed JSON value.
 Since using ```Hello world``` as the first command when something new is learned let's use that and paste the following content into the ```Payload``` field:
 ```
 {
