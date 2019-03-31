@@ -11,7 +11,7 @@ Tools: Windows 10, WSL enabled
 To get Windows 10 and infinimesh working together takes you approximately 20 minutes, if you are an experienced user probably under 3 minutes. 
 
 #### Preparation
-1. Subscribe to infimesh and obtain a username and password (<a href="https://www.infinimesh.io/signup.html" _target="_blank">https://www.infinimesh.io/signup.html</a>)
+1. Subscribe to infimesh and obtain a username and password from <a href="https://www.infinimesh.io/signup.html" target="_blank">https://www.infinimesh.io/signup.html</a>
 2. Make sure you have WSL (Windows Subsystem for Linux) enabled and you have installed a distro of your choice (<a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10" target="_blank">https://docs.microsoft.com/en-us/windows/wsl/install-win10)</a>
 3. Install infinimesh CLI (Command Line Interface) within WSL (Linux bash)
 ``` 
@@ -95,7 +95,7 @@ Configuration: <none>
 Congratulations! You have sent the first data from your emulated device to infinimesh and you have proven that it worked. 
 
 ### Conclusion  
-In this HowTo we have prepared our Windows 10 system to work properly with infinimesh. We created X509 certificates for our device, and we registered the device so it is known in your own infinmesh name space. Short after that we have sent data to the device and to proof that the data was properly received we were able to read the status change from our CLI. A good read would be also our <a href="https://infinimesh.github.io/infinimesh/docs/#/quickstart" target="_new">Quickstart Manual</a>.
+In this HowTo we have prepared our Windows 10 system to work properly with infinimesh. We created X509 certificates for our device, and we registered the device so it is known in your own infinmesh name space. Short after that we have sent data to the device and to proof that the data was properly received we were able to read the status change from our CLI. A good read would be also our <a href="https://infinimesh.github.io/infinimesh/docs/#/quickstart" target="_blank">Quickstart Manual</a>.
 
 #### For Windows 10 admins and high experienced users
 To create SSL certificates using standard windows tools is also possible, a good read is <a href="https://medium.com/the-new-control-plane/generating-self-signed-certificates-on-windows-7812a600c2d8" target="_blank">https://medium.com/the-new-control-plane/generating-self-signed-certificates-on-windows-7812a600c2d8</a>
