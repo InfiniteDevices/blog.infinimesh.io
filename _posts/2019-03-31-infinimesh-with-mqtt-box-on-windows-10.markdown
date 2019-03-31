@@ -59,7 +59,7 @@ Protocol: mqtts / tls
 Host: mqtt.api.infinimesh.io:8883  
 SSL / TLS version: TLSv1.2  
 SSL / TLS Certificate Type: Choose "Self signed certificates"  
-Username: YOUR UNSERNAME  
+Username: YOUR USERNAME  
 Password: YOUR PASSWORD
 ```
 
