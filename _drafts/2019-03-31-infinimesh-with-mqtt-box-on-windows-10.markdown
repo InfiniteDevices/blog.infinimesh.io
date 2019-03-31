@@ -8,7 +8,7 @@ Level: Beginner
 Time: 20 minutes  
 Tools: Windows 10, WSL enabled  
 
-To get Windows 10 and inifimesh working together takes you approximately 20 minutes, if you are an experienced user probably under 3 minutes. 
+To get Windows 10 and infinimesh working together takes you approximately 20 minutes, if you are an experienced user probably under 3 minutes. 
 
 #### Preparation
 1. Subscribe to infimesh and obtain a username and password (<a href="https://www.infinimesh.io/signup.html" _target="_blank">https://www.infinimesh.io/signup.html</a>)
