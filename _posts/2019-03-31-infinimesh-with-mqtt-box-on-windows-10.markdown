@@ -45,7 +45,7 @@ For example:
 ```
 inf device create infinimesh-QA --cert-file /mnt/c/users/QA/tests/certificates/qa-test159.crt -n infinmesh-qa
 ```
-To control that the device in properly registered use the list command:
+To control that the device is properly registered use the list command:
 ```
 inf device list
 ```
