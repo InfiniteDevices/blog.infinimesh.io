@@ -93,7 +93,7 @@ Configuration: <none>
 Congratulations! You have sent the first data from your emulated device to infinimesh and you have proven that it worked. 
 
 ### Conclusion  
-In this HowTo we have prepared our Windows 10 system to work properly with infinimesh, including installing Go. We created X509 certificates for our device, and we registered the device so it is known in your own infinmesh name space. Short after that we have sent data to the device and to proof that the data was properly received we were able to read the status change from our CLI. 
+In this HowTo we have prepared our Windows 10 system to work properly with infinimesh, including installing Go. We created X509 certificates for our device, and we registered the device so it is known in your own infinmesh name space. Short after that we have sent data to the device and to proof that the data was properly received we were able to read the status change from our CLI. A good read would be also our <a href="https://infinimesh.github.io/infinimesh/docs/#/quickstart" target="_new">Quickstart Manual</a>.
 
 #### For Windows 10 admins and high experienced users
 To create SSL certificates using standard windows tools is also possible, a good read is <a href="https://medium.com/the-new-control-plane/generating-self-signed-certificates-on-windows-7812a600c2d8" target="_blank">https://medium.com/the-new-control-plane/generating-self-signed-certificates-on-windows-7812a600c2d8</a>
