@@ -4,9 +4,9 @@ date: 2019-03-31 14:34:00
 description: How to connect MQTTBox on Windows to infinimesh to send and receive data
 ---
 
-Level: Beginner
-Time: 20 minutes
-Tools: Windows 10, WSL enabled, Golang
+Level: Beginner  
+Time: 20 minutes  
+Tools: Windows 10, WSL enabled, Golang  
 
 To get Windows 10 and inifimesh working together takes you approximately 20 minutes, if you are an experienced user probably under 3 minutes. 
 
@@ -31,11 +31,12 @@ wget https://dl.google.com/go/go1.11.4.linux-amd64.tar.gz && tar -xvf go1.11.4.l
 ```
 to make go available at login you need to to edit .profile in your linux bash home directory, just copy and paste the following:
 ```
-cd ~ && mkdir -p development && cat >> .profile <<EOL
-# set go
-export GOPATH=$HOME/developmentexport 
-GOROOT=/usr/local/goexport 
-PATH=$GOPATH/bin:$GOROOT/bin:$PATHEOL
+cd ~ && mkdir -p development && cat >> .profile <<EOL  
+# set go  
+export GOPATH=$HOME/development  
+export GOROOT=/usr/local/go  
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH  
+EOL  
 ```
 5. Download and install MQTTBox from Windows App Store: <a href="https://www.microsoft.com/de-de/p/mqttbox/9nblggh55jzg?ocid=badge&rtc=1&activetab=pivot:overviewtab" target="_blank">https://www.microsoft.com/en-us/p/mqttbox</a>
 
