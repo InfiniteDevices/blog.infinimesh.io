@@ -70,7 +70,7 @@ Password: YOUR PASSWORD
 ```
 
 In the three SSL certificate fileds choose the right certificates:  
-CA file: your CA, the file named ca-certificates.crt (typical found in WSL under ```/etc/ssl/certs/ca-certificates.crt```)  
+CA file: your CA, the file named ```ca-certificates.crt``` (typical found in WSL under ```/etc/ssl/certs/ca-certificates.crt```)  
 Client certificate file: ```my-first-device.crt```  
 Client key file: ```my-first-device.key```  
 
@@ -101,18 +101,8 @@ Configuration: <none>
 ```
 Congratulations! You have sent the first data from your emulated device to infinimesh and you have proven that it worked. 
 
-Conclusion:  
+###Conclusion  
 In this HowTo we have prepared our Windows 10 system to work properly with infinimesh, including installing Go. We created X509 certificates for our device, and we registered the device so it is known in your own infinmesh name space. Short after that we have sent data to the device and to proof that the data was properly received we were able to read the status change from our CLI. 
 
-
-
-
-
-
-
-
-
-
-backup
-
-  1. Using standard windows tools, a good read is <a href="https://medium.com/the-new-control-plane/generating-self-signed-certificates-on-windows-7812a600c2d8" target="_blank">https://medium.com/the-new-control-plane/generating-self-signed-certificates-on-windows-7812a600c2d8</a>
+#### For Windows 10 admins and high experienced users
+To create SSL certificates using standard windows tools is also possible, a good read is <a href="https://medium.com/the-new-control-plane/generating-self-signed-certificates-on-windows-7812a600c2d8" target="_blank">https://medium.com/the-new-control-plane/generating-self-signed-certificates-on-windows-7812a600c2d8</a>
