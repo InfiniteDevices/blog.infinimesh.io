@@ -60,23 +60,25 @@ Thats all, now the device is registered and ready to work!
 
 #### Use MQTTBox to send and receive data
 First setup a new MQTT Client connection using those parameter:  
+```
 Protocol: mqtts / tls  
 Host: mqtt.api.infinimesh.io:8883  
 SSL / TLS version: TLSv1.2  
 SSL / TLS Certificate Type: Choose "Self signed certificates"  
 Username: YOUR UNSERNAME  
 Password: YOUR PASSWORD
+```
 
 In the three SSL certificate fileds choose the right certificates:  
-CA file: your CA, the file named ca-certificates.crt (typical found in WSL under /etc/ssl/certs/ca-certificates.crt)  
-Client certificate file: my-first-device.crt
-Client key file: my-first-device.key
+CA file: your CA, the file named ca-certificates.crt (typical found in WSL under ```/etc/ssl/certs/ca-certificates.crt```)  
+Client certificate file: my-first-device.crt  
+Client key file: my-first-device.key  
 
 All other parameter can be left as they are. Klick Save. 
 
 #### Send data and subscribe to the device topic
-Now, after MQTTBox is properly connected we also want to send some data. In the case you don't see the publisher box, click on "Add publisher". Our IoT platform has per default Device Shadow builtin, so we just need to publish to shadows/ and add the proper device id we can see with ```inf device list```. As QoS we use "Exactly Once", but that depends on your use case you want to prove. As payload type choose one which is suffienct for you, here we use "Strings / JSON / XML / Characters".  
-Since using "Hello world" as the first ever made command lets use that and peste the following content into the "Payload" field:
+Now, after MQTTBox is properly connected we also want to send some data. In the case you don't see the publisher box, click on ```Add publisher```. Our IoT platform has per default Device Shadow builtin, so we just need to publish to ```shadows/``` and add the proper device id we can see with ```inf device list```. As QoS we use ```Exactly Once```, but that depends on your use case you want to prove. As payload type choose one which is suffienct for you, in that HowTo we use simply ```Strings / JSON / XML / Characters```, but infimesh works also with binary data.  
+Since using ```Hello world``` as the first ever made command is the standard lets use that and paste the following content into the ```Payload``` field:
 ```
 {
 "hello":"infinimesh",
