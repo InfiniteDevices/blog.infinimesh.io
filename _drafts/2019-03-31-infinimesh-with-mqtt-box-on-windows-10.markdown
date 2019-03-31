@@ -51,7 +51,7 @@ inf device list
 
 Thats all, now the device is registered and ready to work!
 
-#### Use MQTTBox to send and receive data
+#### Use MQTTBox to send data to the platform
 First setup a new MQTT Client connection using those parameter:  
 ```
 Protocol: mqtts / tls  
@@ -69,7 +69,7 @@ Client key file: ```my-first-device.key```
 
 All other parameter can be left as they are. Klick Save. 
 
-#### Send data and subscribe to the device topic
+#### Subscribe to the device topic and send data to the device twin
 Now, after MQTTBox is properly connected we also want to send some data. In the case you don't see the publisher box, click on ```Add publisher```. Our IoT platform has per default Device Shadow builtin, so we just need to publish to ```shadows/``` and add the proper device id we can see with ```inf device list```. As QoS we use ```Exactly Once```, but that depends on your use case you want to prove. As payload type choose one which is suffienct for you, in that HowTo we use simply ```Strings / JSON / XML / Characters```, but infimesh works also with binary data.  
 Since using ```Hello world``` as the first ever made command is the standard lets use that and paste the following content into the ```Payload``` field:
 ```
