@@ -41,19 +41,67 @@ EOL
 5. Download and install MQTTBox from Windows App Store: <a href="https://www.microsoft.com/de-de/p/mqttbox/9nblggh55jzg?ocid=badge&rtc=1&activetab=pivot:overviewtab" target="_blank">https://www.microsoft.com/en-us/p/mqttbox</a>
 
 #### Create your first device
-Since we wrote infinimesh completely in Go, you need to have Go properly in your WSL environment installed. To make it short you can easily follow this steps from within your linux bash:
+Lets now play with our new toy, the preparation was long enough!  
+
+As usual, before we can send data from our device we need to register them. Thats typically happen at an ODM (Original Design Manufacturer), but since we play with our toys we do that:
 ```
-wget https://dl.google.com/go/go1.11.4.linux-amd64.tar.gz && tar -xvf go1.11.4.linux-amd64.tar.gz && sudo mv go /usr/local
+inf device create raspi-test1 --cert-file PATH/TO/YOUR/CERTIFICATE/my-first-device.crt -n <YOUR USERNAME>
 ```
-to make go available at login you need to to edit .profile in your linux bash home directory, just copy and paste the following:
+as example:
 ```
-cd ~ && mkdir -p development && cat >> .profile <<EOL  
-# set go  
-export GOPATH=$HOME/development  
-export GOROOT=/usr/local/go  
-export PATH=$GOPATH/bin:$GOROOT/bin:$PATH  
-EOL  
+inf device create infinimesh-QA --cert-file /mnt/c/users/QA/tests/certificates/qa-test159.crt -n infinmesh-qa
 ```
+To control that the device in properly registered use the list command:
+```
+inf device list
+```
+
+Thats all, now the device is registered and ready to work!
+
+#### Use MQTTBox to send and receive data
+First setup a new MQTT Client connection using those parameter:  
+Protocol: mqtts / tls  
+Host: mqtt.api.infinimesh.io:8883  
+SSL / TLS version: TLSv1.2  
+SSL / TLS Certificate Type: Choose "Self signed certificates"  
+Username: YOUR UNSERNAME  
+Password: YOUR PASSWORD
+
+In the three SSL certificate fileds choose the right certificates:  
+CA file: your CA, the file named ca-certificates.crt (typical found in WSL under /etc/ssl/certs/ca-certificates.crt)  
+Client certificate file: my-first-device.crt
+Client key file: my-first-device.key
+
+All other parameter can be left as they are. Klick Save. 
+
+#### Send data and subscribe to the device topic
+Now, after MQTTBox is properly connected we also want to send some data. In the case you don't see the publisher box, click on "Add publisher". Our IoT platform has per default Device Shadow builtin, so we just need to publish to shadows/ and add the proper device id we can see with ```inf device list```. As QoS we use "Exactly Once", but that depends on your use case you want to prove. As payload type choose one which is suffienct for you, here we use "Strings / JSON / XML / Characters".  
+Since using "Hello world" as the first ever made command lets use that and peste the following content into the "Payload" field:
+```
+{
+"hello":"infinimesh",
+"it":"works"
+}
+```
+To see if we did all things right we use the state command ```inf state get YOUR DEVICEID``` - it should look like this:
+```
+inf state get 0x9e
+Reported State:
+  Version:    1
+  Timestamp:  2019-03-31 14:43:32.993803713 +0200 DST
+  Data:
+    {
+      "hello": "infinimesh",
+      "it": "works"
+    }
+Desired State: <none>
+Configuration: <none>
+```
+Congratulations! You have sent the first data from your emulated device to infinimesh and you have proven that it worked. 
+
+Conclusion:  
+In this HowTo we have prepared our Windows 10 system to work properly with infinimesh, including installing Go. We created X509 certificates for our device, and we registered the device so it is known in your own infinmesh name space. Short after that we have sent data to the device and to proof that the data was properly received we were able to read the status change from our CLI. 
+
 
 
 
