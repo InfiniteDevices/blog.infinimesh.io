@@ -9,12 +9,13 @@ To get Windows 10 and inifimesh working together takes you approximately 20 minu
 #### Preparation
 1. Subscribe to infimesh and obtain a username and password (<a href="https://www.infinimesh.io/signup.html" _target="_blank">https://www.infinimesh.io/signup.html</a>)
 2. Create Self-signed X509 certificates
-  1. Make sure you have WSL (Windows Subsystem for Linux) enabled and install a distro of your choice (<a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10" target="_blank">https://docs.microsoft.com/en-us/windows/wsl/install-win10</a>
-  2. Use the native openssl command from your linux terminal (bash): 
-     ```
-	openssl genrsa -out my-first-device.key 4096 && openssl req -new -x509 -sha256 -key my-first-device.key -out my-first-device.crt -days 365    
+  * Make sure you have WSL (Windows Subsystem for Linux) enabled and install a distro of your choice (<a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10" target="_blank">https://docs.microsoft.com/en-us/windows/wsl/install-win10)</a>
+  * Use the native openssl command from your linux terminal (bash): 
+```
+openssl genrsa -out my-first-device.key 4096 && openssl req -new -x509 -sha256 -key my-first-device.key -out my-first-device.crt -days 365    
+```
 3. copy all certificates (.crt, .key and ca-certificate.crt) to one directory you can easily remember
-  tip: The windows filesystem is mounted over /mnt in WSL, to copy the files use: 
+  * tip: The windows filesystem is mounted over /mnt in WSL, to copy the files use: 
 
 ```
 mkdir /mnt/c/users/YOUR-USERNAME/certificates 
