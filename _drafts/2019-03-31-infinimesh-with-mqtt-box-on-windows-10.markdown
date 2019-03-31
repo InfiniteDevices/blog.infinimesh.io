@@ -25,20 +25,7 @@ openssl genrsa -out my-first-device.key 4096 && openssl req -new -x509 -sha256 -
 mkdir /mnt/c/users/YOUR-USERNAME/certificates 
 cp *.key *.cert /etc/ssl/certs/ca-certificates.crt /mnt/c/users/YOUR-USERNAME/certificates
 ```
-4. Since we wrote infinimesh completely in Go, you need to have Go properly in your WSL environment installed. To make it short you can easily follow this steps from within your linux bash:
-```
-wget https://dl.google.com/go/go1.11.4.linux-amd64.tar.gz && tar -xvf go1.11.4.linux-amd64.tar.gz && sudo mv go /usr/local
-```
-to make go available at login you need to to edit .profile in your linux bash home directory, just copy and paste the following:
-```
-cd ~ && mkdir -p development && cat >> .profile <<EOL  
-# set go  
-export GOPATH=$HOME/development  
-export GOROOT=/usr/local/go  
-export PATH=$GOPATH/bin:$GOROOT/bin:$PATH  
-EOL  
-```
-5. Download and install MQTTBox from Windows App Store: <a href="https://www.microsoft.com/de-de/p/mqttbox/9nblggh55jzg?ocid=badge&rtc=1&activetab=pivot:overviewtab" target="_blank">https://www.microsoft.com/en-us/p/mqttbox</a>
+4. Download and install MQTTBox from Windows App Store: <a href="https://www.microsoft.com/de-de/p/mqttbox/9nblggh55jzg?ocid=badge&rtc=1&activetab=pivot:overviewtab" target="_blank">https://www.microsoft.com/en-us/p/mqttbox</a>
 
 #### Create your first device
 Lets now play with our new toy, the preparation was long enough!  
