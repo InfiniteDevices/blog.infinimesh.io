@@ -31,7 +31,7 @@ openssl req -new -x509 -sha256 -key my-first-device.key -out my-first-device.crt
 mkdir /mnt/c/users/YOUR-USERNAME/certificates 
 cp *.key *.cert /etc/ssl/certs/ca-certificates.crt /mnt/c/users/YOUR-USERNAME/certificates
 ```
-6. Download and install MQTTBox from Windows App Store: <a href="https://www.microsoft.com/de-de/p/mqttbox/9nblggh55jzg?ocid=badge&rtc=1&activetab=pivot:overviewtab" target="_blank">https://www.microsoft.com/en-us/p/mqttbox</a>
+6. Download and install MQTTBox from: <a href="https://www.microsoft.com/en-us/p/mqttbox/9nblggh55jzg" target="_blank">Windows App Store</a>
 
 #### Create your first device
 Lets now play with our new toy, the preparation was long enough!  
