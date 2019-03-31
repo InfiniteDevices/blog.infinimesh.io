@@ -14,9 +14,11 @@ To get Windows 10 and infinimesh working together takes you approximately 20 min
 1. Subscribe to infimesh and obtain a username and password (<a href="https://www.infinimesh.io/signup.html" _target="_blank">https://www.infinimesh.io/signup.html</a>)
 2. Make sure you have WSL (Windows Subsystem for Linux) enabled and you have installed a distro of your choice (<a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10" target="_blank">https://docs.microsoft.com/en-us/windows/wsl/install-win10)</a>
 3. Install infinimesh CLI (Command Line Interface) within WSL (Linux bash)
-   ``` curl https://raw.githubusercontent.com/infinimesh/infinimesh/master/godownloader.sh | BINDIR=$HOME/bin bash```
-   ``` echo "export PATH=$HOME/bin:$PATH" >> ~/.profile && . ~/.profile```
-   ``` inf config set-context saas --apiserver grpc.api.infinimesh.io:443 --tls=true``` 
+``` 
+curl https://raw.githubusercontent.com/infinimesh/infinimesh/master/godownloader.sh | BINDIR=$HOME/bin bash  
+echo "export PATH=$HOME/bin:$PATH" >> ~/.profile && . ~/.profile  
+inf config set-context saas --apiserver grpc.api.infinimesh.io:443 --tls=true
+``` 
  
 4. Use the native openssl command from your linux terminal (bash) and create self-signed X509 certificates   
 ```
