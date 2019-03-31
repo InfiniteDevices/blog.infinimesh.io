@@ -101,7 +101,7 @@ Configuration: <none>
 ```
 Congratulations! You have sent the first data from your emulated device to infinimesh and you have proven that it worked. 
 
-###Conclusion  
+### Conclusion  
 In this HowTo we have prepared our Windows 10 system to work properly with infinimesh, including installing Go. We created X509 certificates for our device, and we registered the device so it is known in your own infinmesh name space. Short after that we have sent data to the device and to proof that the data was properly received we were able to read the status change from our CLI. 
 
 #### For Windows 10 admins and high experienced users
