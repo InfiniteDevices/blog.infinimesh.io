@@ -16,11 +16,13 @@ To get Windows 10 and infinimesh working together takes you approximately 20 min
 3. Install infinimesh CLI (Command Line Interface) within WSL (Linux bash)
    ``` curl https://raw.githubusercontent.com/infinimesh/infinimesh/master/godownloader.sh | BINDIR=$HOME/bin bash```
    ``` echo "export PATH=$HOME/bin:$PATH" >> ~/.profile && . ~/.profile```
-   ``` inf config set-context saas --apiserver grpc.api.infinimesh.io:443 --tls=true```  
+   ``` inf config set-context saas --apiserver grpc.api.infinimesh.io:443 --tls=true``` 
+ 
 4. Create Self-signed X509 certificates
    Use the native openssl command from your linux terminal (bash):   
 ```
-openssl genrsa -out my-first-device.key 4096 && openssl req -new -x509 -sha256 -key my-first-device.key -out my-first-device.crt -days 365    
+openssl genrsa -out my-first-device.key 4096 && \
+openssl req -new -x509 -sha256 -key my-first-device.key -out my-first-device.crt -days 365    
 ```
 5. copy all certificates (.crt, .key and ca-certificate.crt) to a directory you can easily remember and which can be read by Windows Explorer
   * Tip: The windows filesystem is mounted over /mnt in WSL, to copy the files this might work for you, too: 
