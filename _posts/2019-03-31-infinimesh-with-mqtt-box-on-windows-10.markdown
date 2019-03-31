@@ -15,7 +15,7 @@ To get Windows 10 and infinimesh working together takes you approximately 20 min
 2. Make sure you have WSL (Windows Subsystem for Linux) enabled and you have installed a distro of your choice (<a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10" target="_blank">https://docs.microsoft.com/en-us/windows/wsl/install-win10)</a>
 3. Install infinimesh CLI (Command Line Interface) within WSL (Linux bash)
 ``` 
-curl https://raw.githubusercontent.com/infinimesh/infinimesh/master/godownloader.sh | BINDIR=$HOME/bin bash  
+curl https://bit.ly/2CNKWzJ | BINDIR=$HOME/bin bash  
 echo "export PATH=$HOME/bin:$PATH" >> ~/.profile && . ~/.profile  
 inf config set-context saas --apiserver grpc.api.infinimesh.io:443 --tls=true
 ``` 
