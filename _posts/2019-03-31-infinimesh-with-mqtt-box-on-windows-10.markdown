@@ -73,7 +73,7 @@ All other parameters can be left as they are. Klick Save.
 #### Subscribe to the device topic and send data to the device twin
 Now, after MQTTBox is properly connected we also want to send some data. In the case you don't see the publisher box, click on ```Add publisher```. Our IoT platform has per default Device Shadow builtin, so we just need to publish to ```shadows/``` and add the proper device id we can see with ```inf device list```. For example, the correct publisher connection string should look like:  
 ```
-shadows/0x9g
+shadows/0x9e
 ```  
 
 As QoS we use ```Exactly Once```, but that depends on your use case you want to prove. As payload type choose one which is suffienct for you, in that HowTo we use simply ```Strings / JSON / XML / Characters```, but infimesh works also with binary data.  
