@@ -18,13 +18,12 @@ To get Windows 10 and infinimesh working together takes you approximately 20 min
    ``` echo "export PATH=$HOME/bin:$PATH" >> ~/.profile && . ~/.profile```
    ``` inf config set-context saas --apiserver grpc.api.infinimesh.io:443 --tls=true``` 
  
-4. Create Self-signed X509 certificates
-   Use the native openssl command from your linux terminal (bash):   
+4. Use the native openssl command from your linux terminal (bash) and create self-signed X509 certificates   
 ```
 openssl genrsa -out my-first-device.key 4096 && \
 openssl req -new -x509 -sha256 -key my-first-device.key -out my-first-device.crt -days 365    
 ```
-5. copy all certificates (.crt, .key and ca-certificate.crt) to a directory you can easily remember and which can be read by Windows Explorer
+5. Copy all certificates (.crt, .key and ca-certificate.crt) to a directory you can easily remember and which can be read by Windows Explorer
   * Tip: The windows filesystem is mounted over /mnt in WSL, to copy the files this might work for you, too: 
 
 ```
@@ -34,13 +33,13 @@ cp *.key *.cert /etc/ssl/certs/ca-certificates.crt /mnt/c/users/YOUR-USERNAME/ce
 6. Download and install MQTTBox from: <a href="https://www.microsoft.com/en-us/p/mqttbox/9nblggh55jzg" target="_blank">Windows App Store</a>
 
 #### Create your first device
-Lets now play with our new toy, the preparation was long enough!  
+Let's now play with our new toy, the preparation was long enough!  
 
-As usual, before we can send data from our device we need to register them. Thats typically happen at an ODM (Original Design Manufacturer), but since we play with our toys we do that:
+As usual, before we can send data from our device we need to register them. That typically happens at an ODM (Original Design Manufacturer), but since we play with our own toys we do that on our own, too:
 ```
 inf device create raspi-test1 --cert-file PATH/TO/YOUR/CERTIFICATE/my-first-device.crt -n <YOUR USERNAME>
 ```
-as example:
+For example:
 ```
 inf device create infinimesh-QA --cert-file /mnt/c/users/QA/tests/certificates/qa-test159.crt -n infinmesh-qa
 ```
@@ -49,10 +48,10 @@ To control that the device in properly registered use the list command:
 inf device list
 ```
 
-Thats all, now the device is registered and ready to work!
+That's all, now the device is registered and ready to work!
 
 #### Use MQTTBox to send data to the platform
-First setup a new MQTT Client connection using those parameter:  
+First setup a new MQTT Client connection using those parameters:  
 ```
 Protocol: mqtts / tls  
 Host: mqtt.api.infinimesh.io:8883  
@@ -62,20 +61,20 @@ Username: YOUR UNSERNAME
 Password: YOUR PASSWORD
 ```
 
-In the three SSL certificate fileds choose the right certificates:  
+In the three SSL certificate boxes choose the right certificate per field:  
 CA file: your CA, the file named ```ca-certificates.crt``` (typical found in WSL under ```/etc/ssl/certs/ca-certificates.crt```)  
 Client certificate file: ```my-first-device.crt```  
 Client key file: ```my-first-device.key```  
 
-All other parameter can be left as they are. Klick Save. 
+All other parameters can be left as they are. Klick Save. 
 
 #### Subscribe to the device topic and send data to the device twin
 Now, after MQTTBox is properly connected we also want to send some data. In the case you don't see the publisher box, click on ```Add publisher```. Our IoT platform has per default Device Shadow builtin, so we just need to publish to ```shadows/``` and add the proper device id we can see with ```inf device list```. As QoS we use ```Exactly Once```, but that depends on your use case you want to prove. As payload type choose one which is suffienct for you, in that HowTo we use simply ```Strings / JSON / XML / Characters```, but infimesh works also with binary data.  
-Since using ```Hello world``` as the first ever made command is the standard lets use that and paste the following content into the ```Payload``` field:
+Since using ```Hello world``` as the first command when something new is learned let's use that and paste the following content into the ```Payload``` field:
 ```
 {
-"hello":"infinimesh",
-"it":"works"
+"hello":"World",
+"infinimesh":"Works"
 }
 ```
 To see if we did all things right we use the state command ```inf state get YOUR DEVICEID``` - it should look like this:
@@ -86,8 +85,8 @@ Reported State:
   Timestamp:  2019-03-31 14:43:32.993803713 +0200 DST
   Data:
     {
-      "hello": "infinimesh",
-      "it": "works"
+      "hello": "World",
+      "infinimesh": "Works"
     }
 Desired State: <none>
 Configuration: <none>
@@ -95,7 +94,7 @@ Configuration: <none>
 Congratulations! You have sent the first data from your emulated device to infinimesh and you have proven that it worked. 
 
 ### Conclusion  
-In this HowTo we have prepared our Windows 10 system to work properly with infinimesh, including installing Go. We created X509 certificates for our device, and we registered the device so it is known in your own infinmesh name space. Short after that we have sent data to the device and to proof that the data was properly received we were able to read the status change from our CLI. A good read would be also our <a href="https://infinimesh.github.io/infinimesh/docs/#/quickstart" target="_new">Quickstart Manual</a>.
+In this HowTo we have prepared our Windows 10 system to work properly with infinimesh. We created X509 certificates for our device, and we registered the device so it is known in your own infinmesh name space. Short after that we have sent data to the device and to proof that the data was properly received we were able to read the status change from our CLI. A good read would be also our <a href="https://infinimesh.github.io/infinimesh/docs/#/quickstart" target="_new">Quickstart Manual</a>.
 
 #### For Windows 10 admins and high experienced users
 To create SSL certificates using standard windows tools is also possible, a good read is <a href="https://medium.com/the-new-control-plane/generating-self-signed-certificates-on-windows-7812a600c2d8" target="_blank">https://medium.com/the-new-control-plane/generating-self-signed-certificates-on-windows-7812a600c2d8</a>
