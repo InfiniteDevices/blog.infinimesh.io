@@ -71,8 +71,8 @@ Password: YOUR PASSWORD
 
 In the three SSL certificate fileds choose the right certificates:  
 CA file: your CA, the file named ca-certificates.crt (typical found in WSL under ```/etc/ssl/certs/ca-certificates.crt```)  
-Client certificate file: my-first-device.crt  
-Client key file: my-first-device.key  
+Client certificate file: ```my-first-device.crt```  
+Client key file: ```my-first-device.key```  
 
 All other parameter can be left as they are. Klick Save. 
 
