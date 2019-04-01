@@ -37,6 +37,11 @@ cp *.key *.cert /etc/ssl/certs/ca-certificates.crt /mnt/c/users/YOUR-USERNAME/ce
 #### Create your first device
 Let's now play with our new toy, the preparation was long enough!  
 
+Login to infinimesh with your obtained username and password:
+```
+inf login
+```  
+
 As usual, before we can send data from our device we need to register them. That typically happens at an ODM (Original Design Manufacturer), but since we play with our own toys we do that on our own, too:
 ```
 inf device create raspi-test1 --cert-file PATH/TO/YOUR/CERTIFICATE/my-first-device.crt -n <YOUR USERNAME>
