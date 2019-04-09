@@ -58,5 +58,5 @@ to know what implications the data has, what uncountable values this data can ge
 uncontrollable data collections can cause. Building new data driven business will be the most exciting job in future, things 
 never done before are now possible. <b>Embrace this</b>. 
 <br><br>
-The article can be read online: <a href="The article can be read online here: https://www.cioapplicationseurope.com/magazines/March2019/Cloud/#page=8" target="_blank">
+The article can be read online: <a href="https://www.cioapplicationseurope.com/magazines/March2019/Cloud/#page=8" target="_blank">
 https://www.cioapplicationseurope.com/magazines/March2019/Cloud/#page=8</a>
