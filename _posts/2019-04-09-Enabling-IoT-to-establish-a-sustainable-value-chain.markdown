@@ -10,7 +10,7 @@ business approaches. Here's the article as web-readable version.
 IoT devices are getting more and more intelligent and can now create meshed networks by itself, switching from a sensor 
 into an actor and transferring informations only for the meshed neighbors. For example a connected car could tell the future 
 home that the homeowner will be at home in 5 minutes and the garage door and the door need to be unlocked in time, the lights 
-need to be switched on and the grid operator needs to be informed that the wallbox now charges with 22KV. In near future this 
+need to be switched on and the grid operator needs to be informed that the wallbox now charges with 22KW. In near future this 
 will happen over direct meshed information cells, operated by always connected devices, wearables, sensors, actors, mobile 
 devices - short: everything. And all cloud provider offer dozens of solution to master the challenges, on the one, other or 
 complete different way. 
