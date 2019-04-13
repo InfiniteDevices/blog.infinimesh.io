@@ -3,7 +3,7 @@ title: "Enabling IoT to establish a sustainable value chain"
 date: 2019-04-09 19:34:00
 description: The story is about IoT and what it need to establish a value chain, driven by IoT and connected devices
 ---
-In March Alex, our CEO, wrote an article for CIO Applications (<a href="https://www.cioapplications.com/" target="_blank">
+In March Alex, our Chairman of the board, wrote an article for CIO Applications (<a href="https://www.cioapplications.com/" target="_blank">
 https://www.cioapplications.com/</a>), a magazine for trending technologies and how they can impact the transformation of 
 business approaches. Here's the article as web-readable version.
 <br><br>
