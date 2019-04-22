@@ -245,7 +245,7 @@ To trust the root certificate, you must go to your browser settings and add the 
 ### Access CLI
 Use `set-context` to add a config in the CLI:
 ```
-inf config set-context minikube --apiserver grpc.api.infinimesh.minikube:443 --tls=true --ca-file ca.crt
+inf config set-context microk8s --apiserver grpc.api.infinimesh.local:443 --tls=true --ca-file ca.crt
 ```
   
 In order to log in, you have to get the password of the root user. The Kubernetes operator took care of this; it auto-generated the root user with a random password and stored it in the Kubernetes secret `my-platform-root-account`.
