@@ -252,11 +252,15 @@ Use `set-context` to add a config in the CLI:
 ```
 inf config set-context microk8s --apiserver grpc.api.infinimesh.local:443 --tls=true --ca-file ca.crt
 ```
-  
-In order to log in, you have to get the password of the root user. The Kubernetes operator took care of this; it auto-generated the root user with a random password and stored it in the Kubernetes secret `my-platform-root-account`.
+    
+In order to log in, you have to get the password of the root user. The Kubernetes operator took care of this; it auto-generated the root user with a random password and stored it in the Kubernetes secret `my-infinimesh-root-account`.
   
 ```
 kubectl get secret my-infinimesh-root-account -o=jsonpath='{.data.password}' | base64 -d
+```
+Now login using root/ and the password:
+```
+inf login
 ```
 
 Use the native openssl command from your linux terminal (bash) and create self-signed X509 certificates for your test device 
@@ -267,11 +271,11 @@ openssl req -new -x509 -sha256 -key my-first-device.key -out my-first-device.crt
 
 Create a device within infinimesh
 ```
-inf device create sample-device --cert-file sample_1.crt
+inf device create sample-device --cert-file my-first-device.crt
 ```
   
 ### Access UI
-You can access the UI at <a href="https://app.infinimesh.local" target="_new">https://app.infinimesh.local</a>
+You can access the UI at <a href="https://app.infinimesh.local" target="_new">https://app.infinimesh.local</a>.
   
 ### Access MQTT
 Since we are on microk8s or Minikube, we have to find out the `NodePort` of the service (type LoadBalancer is not available on both):
