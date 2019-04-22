@@ -88,33 +88,33 @@ You need `openssl` for the following steps.
 0.1 Generate Private Key
 ```
 openssl genrsa -out ca.key 4096
-openssl req -subj '/CN=infinimesh.minikube/O=Infinimesh' -new -x509 -sha256 -key ca.key -out ca.crt -days 3650
+openssl req -subj '/CN=infinimesh.local/O=Infinimesh' -new -x509 -sha256 -key ca.key -out ca.crt -days 3650
 ```
 
 1. Generate Platform Private Keys & Certificates
 1.1 API Server
 ```
 openssl genrsa -out apiserver_grpc.key 4096
-openssl req -subj /CN=grpc.api.infinimesh.minikube -out apiserver_grpc.csr -key apiserver_grpc.key -new
+openssl req -subj /CN=grpc.api.infinimesh.local -out apiserver_grpc.csr -key apiserver_grpc.key -new
 openssl x509 -req -days 3650 -in apiserver_grpc.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out apiserver_grpc.crt -sha256 
 ```
 1.2 API Server REST
 ```
 openssl genrsa -out apiserver_rest.key 4096
-openssl req -subj /CN=api.infinimesh.minikube -out apiserver_rest.csr -key apiserver_rest.key -new
+openssl req -subj /CN=api.infinimesh.local -out apiserver_rest.csr -key apiserver_rest.key -new
 openssl x509 -req -days 3650 -in apiserver_rest.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out apiserver_rest.crt -sha256 
 ```
 1.3 MQTT Bridge
 ```
 openssl genrsa -out mqtt_bridge.key 4096
-openssl req -subj /CN=mqtt.api.infinimesh.minikube -out mqtt_bridge.csr -key mqtt_bridge.key -new
+openssl req -subj /CN=mqtt.api.infinimesh.local -out mqtt_bridge.csr -key mqtt_bridge.key -new
 openssl x509 -req -days 3650 -in mqtt_bridge.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out mqtt_bridge.crt -sha256 
 ```
 
 1.4 App
 ```
 openssl genrsa -out app.key 4096
-openssl req -subj /CN=app.infinimesh.minikube -out app.csr -key app.key -new
+openssl req -subj /CN=app.infinimesh.local -out app.csr -key app.key -new
 openssl x509 -req -days 3650 -in app.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out app.crt -sha256 
 ```
 
@@ -227,10 +227,10 @@ It is important that the kafka resource is created in the same namewhere where t
 Since we use TLS and use specific hostnames, we have to add those to our `hosts` file.
 
 ```
-192.168.99.106 grpc.api.infinimesh.minikube
-192.168.99.106 api.infinimesh.minikube
-192.168.99.106 app.infinimesh.minikube
-192.168.99.106 mqtt.api.infinimesh.minikube
+192.168.99.106 grpc.api.infinimesh.local
+192.168.99.106 api.infinimesh.local
+192.168.99.106 app.infinimesh.local
+192.168.99.106 mqtt.api.infinimesh.local
 ```
   
 Replace 192.168.99.106 with the address of your minikube instance. You can find it by running `multipass service list` or `minikube service list`.
@@ -260,7 +260,7 @@ inf device create sample-device --cert-file sample_1.crt
 ```
   
 ### Access UI
-You can access the UI at https://app.infinimesh.minikube
+You can access the UI at <a href="https://app.infinimesh.minikube" target="_new">https://app.infinimesh.local</a>
   
 ### Access MQTT
 Since we are on microk8s or Minikube, we have to find out the `NodePort` of the service (type LoadBalancer is not available on both):
