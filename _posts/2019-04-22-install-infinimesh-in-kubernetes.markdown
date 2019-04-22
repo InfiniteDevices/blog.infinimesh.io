@@ -137,7 +137,7 @@ Now we're installing the resources required by Infinimesh into Kubernetes:
   
 Note: We already installed Secrets in the previous step.
   
-1. Create a onfinimesh Platform Resource
+1. Create a infinimesh Platform Resource<br>
 Copy the following into a local file, I named it platform.yaml for simplicity. Tip: "name" can be edited to fit your installation.
 Important: Take care that the host&tls config match to the deployed secrets we created before!
   
