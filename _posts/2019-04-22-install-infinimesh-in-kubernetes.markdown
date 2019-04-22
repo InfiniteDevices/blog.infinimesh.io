@@ -256,7 +256,7 @@ inf config set-context microk8s --apiserver grpc.api.infinimesh.local:443 --tls=
 In order to log in, you have to get the password of the root user. The Kubernetes operator took care of this; it auto-generated the root user with a random password and stored it in the Kubernetes secret `my-platform-root-account`.
   
 ```
-kubectl get secret my-platform-root-account -o=jsonpath='{.data.password}' | base64 -d
+kubectl get secret my-infinimesh-root-account -o=jsonpath='{.data.password}' | base64 -d
 ```
   
 Create a device
