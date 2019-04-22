@@ -243,6 +243,11 @@ But we were smart enough to sign these with *one* self signed root cert, so we o
 To trust the root certificate, you must go to your browser settings and add the file `ca.crt` as an certificate `Authority`.
   
 ### Access CLI
+If you haven't before, update or install `inf`, our CLI tool via:
+```
+curl -L https://bit.ly/2CNKWzJ | BINDIR=$HOME/bin bash
+```
+
 Use `set-context` to add a config in the CLI:
 ```
 inf config set-context microk8s --apiserver grpc.api.infinimesh.local:443 --tls=true --ca-file ca.crt
