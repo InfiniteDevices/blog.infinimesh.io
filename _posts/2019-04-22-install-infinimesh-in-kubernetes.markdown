@@ -260,7 +260,7 @@ inf device create sample-device --cert-file sample_1.crt
 ```
   
 ### Access UI
-You can access the UI at <a href="https://app.infinimesh.minikube" target="_new">https://app.infinimesh.local</a>
+You can access the UI at <a href="https://app.infinimesh.local" target="_new">https://app.infinimesh.local</a>
   
 ### Access MQTT
 Since we are on microk8s or Minikube, we have to find out the `NodePort` of the service (type LoadBalancer is not available on both):
