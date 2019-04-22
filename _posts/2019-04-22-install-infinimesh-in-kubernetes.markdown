@@ -258,8 +258,14 @@ In order to log in, you have to get the password of the root user. The Kubernete
 ```
 kubectl get secret my-infinimesh-root-account -o=jsonpath='{.data.password}' | base64 -d
 ```
-  
-Create a device
+
+Use the native openssl command from your linux terminal (bash) and create self-signed X509 certificates for your test device 
+```
+openssl genrsa -out my-first-device.key 4096 && \
+openssl req -new -x509 -sha256 -key my-first-device.key -out my-first-device.crt -days 365  
+```
+
+Create a device within infinimesh
 ```
 inf device create sample-device --cert-file sample_1.crt
 ```
