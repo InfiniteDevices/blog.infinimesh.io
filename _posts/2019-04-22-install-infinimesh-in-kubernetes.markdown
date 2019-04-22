@@ -5,7 +5,7 @@ description: Get infinimesh IoT Platform running in kubernetes for local or on-p
 ---
 
 We have built infinimesh (<a href="https://www.infinimesh.io" target="_blank">https://www.infinimesh.io</a>) to run everywhere. 
-In this blogpost we we use <a href="https://microk8s.io/" target="_blank">microk8s</a> as local installation, but
+In this blogpost we use <a href="https://microk8s.io/" target="_blank">microk8s</a> as local installation, but
 any kubernetes distribution would work, too. 
 We did installations with Canonical Multi-Cloud installations 
 (<a href="https://www.ubuntu.com/kubernetes" target="_blank">https://www.ubuntu.com/kubernetes</a>), as example. 
