@@ -220,7 +220,8 @@ kubectl apply -f kafka.yaml -n kafka
 ```
   
 It is important that the kafka resource is created in the same namewhere where the kafka operator is located (by default `kafka`)
-  
+Please wait, the complete setup will take between 10 and 20 minutes, depending on internet speed and cluster resources.
+<br>
 ## Access Infinimesh
 
 ### DNS
@@ -275,8 +276,14 @@ inf device create sample-device --cert-file my-first-device.crt
 ```
   
 ### Access UI
-You can access the UI at <a href="https://app.infinimesh.local" target="_new">https://app.infinimesh.local</a>.
-  
+You can access the UI at <a href="https://app.infinimesh.local" target="_new">https://app.infinimesh.local</a> using root and the password from the step above
+
+### Add users
+Since the root operator is the master user its always a good idea to create "normal" users:
+```
+inf create account NAME PASSWORD
+```
+
 ### Access MQTT
 Since we are on microk8s or Minikube, we have to find out the `NodePort` of the service (type LoadBalancer is not available on both):
   
