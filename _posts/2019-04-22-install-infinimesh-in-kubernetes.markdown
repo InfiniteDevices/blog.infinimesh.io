@@ -53,17 +53,17 @@ For more details refer to <a href="https://strimzi.io/quickstarts/minikube/" tar
   
 ### NGINX Ingress Controller
   
-For API Servers and App, infinimesh uses Ingrees Controller. When using Minikube, enable it as addon:
+For API Servers and App, infinimesh uses Ingrees Controller DNS and Storage. When using Minikube, enable it as addon:
 ```
-minikube addons enable ingress
+minikube addons enable ingress dns storage
 ```
 or with microk8s:
 ```
-microk8s.enable ingress
+microk8s.enable ingress dns storage
 ```
 If you use microk8s with multipass use: 
 ```
-multipass exec microk8s-vm -- /snap/bin/microk8s.enable ingress
+multipass exec microk8s-vm -- /snap/bin/microk8s.enable ingress dns storage
 ```
   
 When deploy to a real cluster, follow the instructions here: (https://kubernetes.github.io/ingress-nginx/deploy/). 
@@ -296,7 +296,12 @@ Send a state message:
 ```
 mosquitto_pub --cafile ca.crt --cert sample_1.crt --key sample_1.key -m '{"sensor" : {"temp" : 41}}' -t "devices/0x2711/state/reported/delta" -h mqtt.api.infinimesh.minikube --tls-version tlsv1.2 -d -p 31108
 ```
-  
+### Delete the platform
+In the case something goes wrong and you need to restart the setup, the platform can be easy removed via:
+```
+kubectl delete platform my-infinimesh
+```
+
 That's all - now your have your own IoT platform running. We recommend this kind of installation in every IoT or IIoT project to
 enable rapid prototyping. But we have also a free SaaS offering available, you just need to <a href="https://www.infinimesh.io/signup.html" target="_new">signup</a>, 
 25 devices are free. 
