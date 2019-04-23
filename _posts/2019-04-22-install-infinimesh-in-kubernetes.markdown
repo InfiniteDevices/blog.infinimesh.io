@@ -21,7 +21,7 @@ Infinimesh is a Cloud Native Application and leverages Kubernetes Operators to i
 ### Set the default config for your cluster
 infinimesh can be installed in different clusters from one console. To do so export the config you want to use, as example:
 ```
-export KUBECONFIG=$KUBECONFIG:~./kubeconfig
+export KUBECONFIG=$KUBECONFIG:~/kubeconfig
 ```
   
 ### Infinimesh Operator
