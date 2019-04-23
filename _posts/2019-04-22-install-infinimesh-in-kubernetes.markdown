@@ -241,7 +241,7 @@ Replace 192.168.99.106 with the address of your minikube instance. You can find 
 In addition, since we use self-signed certificates, we must trust these certificates. Note: just trusting the certificate in the UI is not sufficient; since we have multiple certs for api, grpc, mqtt, app.
 But we were smart enough to sign these with *one* self signed root cert, so we only have to import `ca.crt` into our browser.
 
-To trust the root certificate, you must go to your browser settings and add the file `ca.crt` as an certificate `Authority`.
+To trust the root certificate, you must go to your browser settings and add the file `ca.crt` as an certificate `Authority`. This works best with Firefox or Safari, we encounter some issues with Chrome. 
   
 ### Access CLI
 If you haven't before, update or install `inf`, our CLI tool via:
