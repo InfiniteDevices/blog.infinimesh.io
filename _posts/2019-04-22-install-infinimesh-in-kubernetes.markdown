@@ -173,7 +173,7 @@ spec:
           - "grpc.api.infinimesh.minikube"
           secretName: "apiserver-grpc-tls"
 ```
-and apply the manifedt via
+and apply the manifest via
 
 ```
 kubectl apply -f platform.yaml
