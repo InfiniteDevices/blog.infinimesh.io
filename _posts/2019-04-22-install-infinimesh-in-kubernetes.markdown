@@ -152,25 +152,25 @@ spec:
   kafka:
     bootstrapServers: "infinimesh-kafka-bootstrap.kafka.svc.cluster.local:9092"
   app:
-    host: "app.infinimesh.minikube"
+    host: "app.infinimesh.local"
     tls:
       - hosts:
-        - "app.infinimesh.minikube"
+        - "app.infinimesh.local"
         secretName: "app-tls"
   mqtt:
     secretName: "mqtt-bridge-tls"
   apiserver:
     restful:
-      host: "api.infinimesh.minikube"
+      host: "api.infinimesh.local"
       tls:
         - hosts:
-          - "api.infinimesh.minikube"
+          - "api.infinimesh.local"
           secretName: "apiserver-rest-tls"
     grpc:
-      host: "grpc.api.infinimesh.minikube"
+      host: "grpc.api.infinimesh.local"
       tls:
         - hosts:
-          - "grpc.api.infinimesh.minikube"
+          - "grpc.api.infinimesh.local"
           secretName: "apiserver-grpc-tls"
 ```
 and apply the manifest via
