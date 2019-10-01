@@ -1,5 +1,5 @@
 ---
-title: "infinimesh, Inc. appoint new CEO"
+title: "infinimesh, Inc. appoints new CEO"
 date: 2019-10-01 12:25:00
 description: inifinimesh, Inc. today announced that its Board of Directors has appointed Volkmar Kunerth as new Chief Executive Officer
 ---
