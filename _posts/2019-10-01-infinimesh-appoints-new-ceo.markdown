@@ -17,7 +17,7 @@ as a member of infinimesh’s board of directors, Kuhnerth has a solid understan
 emerging markets.”<br><br>
 
 Kunerth said, “I am excited to succeed with Infinimesh and to create value for customers and investors. Infinimesh gives 
-customers deep insights into all of its IoT assets while being secure because it's being run on a private cloud. We will enable 
+customers deep insights into all of its IoT assets while being secure because it is being run on a private cloud. We will enable 
 companies to keep their IoT data secure and under their own control. This is strategically essential."<br>
 Speaking on behalf of the board, Alten-Lorenz said, “A startup company’s success largely depends on the spirit and 
 vision of its executive leaders. We very much appreciate Peter's efforts and his service to infinimesh since his appointment. 
